@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 20px;
+}
+
+button {
+    margin: 4px;
+    padding: 4px;
+}
+
+.channel-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
