@@ -1,0 +1,95 @@
+main {
+    width: 500px;
+    height: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: scroll;
+}
+
+details {
+    border: 1px solid black;
+}
+
+details:not([open]) {
+    cursor: pointer;
+}
+
+details[open]>summary {
+    cursor: pointer;
+    background-color: beige;
+    border-bottom: 1px solid black;
+}
+
+summary {
+    padding: 1rem;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    list-style-type: none;
+    margin: 0;
+}
+
+h1,
+h2,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    width: max-content;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+img {
+    width: 100%;
+}
+
+::marker {
+    content: '';
+}
+
+a {
+    padding: 0.5rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+a > * {
+    pointer-events: none;
+}
+
+
+@media (hover: hover) {
+    details:not([open]):hover {
+        background-color: beige;
+        color: blue;
+    }
+
+    details[open]>summary:hover {
+        color: blue;
+    }
+
+    a:hover {
+        background-color: beige;
+        scale: 105%;
+        color: blue;
+    }
+}

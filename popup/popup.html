@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FeedTube</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 <body>
     <main id="app"></main>
     <template id="channel-template">
         <article>
-            <h1></h1>
-            <ul></ul>
+            <details>
+                <summary>
+                    <h1></h1>
+                </summary>
+                <ul></ul>
+            </details>
         </article>
     </template>
     <template id="element-template">
         <li>
-            <h2></h2>
-            <h6></h6>
-            <img alt="Video thumbnail">
-            <a>Watch...</a>
+            <a>
+                <img alt="Video thumbnail">
+                <h2></h2>
+                <h6></h6>
+            </a>
         </li>
     </template>
     <script src="popup.js"></script>
