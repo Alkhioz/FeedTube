@@ -1,7 +1,37 @@
 body {
-    font-family: sans-serif;
-    max-width: 600px;
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 400px;
+    gap: 1rem;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#addChannelContainer {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#addChannelContainer > input {
+    flex-grow: 1;
+    padding: 0.5rem;
+}
+
+#addChannelContainer > button {
+    margin: 0;
+    background-color: seagreen;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    width: 100px;
+    cursor: pointer;
 }
 
 button {
@@ -12,6 +42,25 @@ button {
 .channel-item {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid black;
+}
+
+.channel-item > button {
+    margin: 0;
+    background-color: tomato;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.channel-item > div {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
+    word-break: break-all;
+    display: block;
 }

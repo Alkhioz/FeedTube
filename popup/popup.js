@@ -71,4 +71,10 @@ const getFeeds = async () => {
 
 document.addEventListener("DOMContentLoaded", _ => {
     getFeeds();
+    document.getElementById("close").addEventListener("click", () => {
+        window.close();
+    });
+    document.getElementById("settings").addEventListener("click", () => {
+        chrome.runtime.openOptionsPage();
+    });
 });

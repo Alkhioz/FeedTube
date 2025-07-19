@@ -7,16 +7,21 @@
 </head>
 <body>
   <h2>FeedTube Configuration</h2>
-
-  <div id="channels"></div>
-
-  <h3>Add New Channel</h3>
-  <input id="pattern" placeholder="Channel url">
-  <button id="addChannel">Add Channel</button>
+  <div>
+    <h3>Add New Channel</h3>
+    <div id="addChannelContainer">
+      <input id="pattern" placeholder="Channel url">
+      <button id="addChannel">Add Channel</button>
+    </div>
+  </div>
+  <div>
+    <h3>Channel List</h3>
+    <div id="channels"></div>
+  </div>
 
   <template id="channel-item-template">
     <div class="channel-item">
-        <h5></h5>
+        <div data-url></div>
         <button>Delete</button>
     </div>
   </template>

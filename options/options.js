@@ -26,7 +26,7 @@ const renderChannels = _ => {
     channels.map( channel => {
         const template = getElement("#channel-item-template");
         const content = template.content.cloneNode(true);
-        getElement('h5', content).innerHTML = channel;
+        getElement('div[data-url]', content).innerHTML = channel;
         addEvent(getElement('button', content), "click", removeChannel(channel));
         channelsContainer.appendChild(content);
     });
